@@ -15,6 +15,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 interface VelocityScrollProps {
   text: string
+  text2: string
   default_velocity?: number
   className?: string
 }
@@ -27,6 +28,7 @@ interface ParallaxProps {
 
 export function VelocityScroll({
   text,
+  text2,
   default_velocity = 5,
   className
 }: VelocityScrollProps) {
@@ -106,7 +108,7 @@ export function VelocityScroll({
         {text}
       </ParallaxText>
       <ParallaxText baseVelocity={-default_velocity} className={className}>
-        {text}
+        {text2}
       </ParallaxText>
     </section>
   )
