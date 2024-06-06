@@ -1,3 +1,9 @@
+import Gol from './Gol'
+
 export default function App() {
-  return <div>Hello</div>
+  return (
+    <div>
+      <Gol />
+    </div>
+  )
 }
