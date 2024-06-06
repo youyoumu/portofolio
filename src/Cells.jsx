@@ -52,7 +52,7 @@ export default function Cells({ windowSize }) {
       const rowLength = cells[i].length
       for (let j = 0; j < rowLength; j++) {
         const cell = cells[i][j]
-        if (cell.deadtime > 2) {
+        if (cell.deadtime > 2 && !cell.isAlive) {
           continue
         }
         g.beginFill(cellColor(cell))
@@ -71,7 +71,7 @@ export default function Cells({ windowSize }) {
   let stopwatch = 0
   useTick((delta) => {
     stopwatch += delta
-    if (stopwatch > 5) {
+    if (stopwatch > 20) {
       stopwatch = 0
       setCells(createNextGeneration(cells, mousePosition.current))
       setTick(tick + 1)
