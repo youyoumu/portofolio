@@ -27,17 +27,17 @@ export default function Cells({ windowSize }) {
   function cellColor(cell) {
     if (cell.isAlive) {
       if (cell.lifetime === 0) {
-        return 0xe3e3e3
+        return 0xf7f7f7
       } else if (cell.lifetime === 1) {
-        return 0xc2c2c2
+        return 0xe8e8e8
       } else {
-        return 0xa5a5a5
+        return 0xe3e3e3
       }
     } else {
       if (cell.deadtime === 1) {
-        return 0xc2c2c2
+        return 0xe8e8e8
       } else if (cell.deadtime === 2) {
-        return 0xe3e3e3
+        return 0xf7f7f7
       }
       return 0xffffff
     }
