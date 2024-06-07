@@ -1,4 +1,5 @@
 import { VelocityScroll } from './components/scroll-based-velocity'
+import { openInNewTab } from './lib/utils'
 
 export default function Portofolio() {
   return (
@@ -45,11 +46,17 @@ export default function Portofolio() {
                   src="/src/assets/github-mark-white.svg"
                   alt=""
                   className="invert w-8 p-0.5"
+                  onClick={() =>
+                    openInNewTab('https://github.com/youyoumu/discord-clone')
+                  }
                 />
                 <img
                   src="/src/assets/open-in-new.svg"
                   alt=""
                   className="invert w-8"
+                  onClick={() =>
+                    openInNewTab('https://discord-clone.youyoumu.my.id')
+                  }
                 />
               </div>
             </div>
