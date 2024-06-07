@@ -69,7 +69,7 @@ export default function Portofolio() {
               <div
                 className="cursor-pointer"
                 onClick={() =>
-                  navigator.clipboard.writeText('youyoumu2024.proton.me')
+                  navigator.clipboard.writeText('youyoumu2024@proton.me')
                 }
               >
                 Email
