@@ -17,7 +17,7 @@ export default function Portofolio() {
         text="HTML CSS JavaScript TypeScript Ruby SQL Linux Bash Git SSH"
         text2="Next.js Ruby on Rails React Tailwind CSS PixiJS shadcn/ui Bootstrap daisyUI"
         default_velocity={3}
-        className="font-display text-center text-4xl font-medium tracking-[-0.02em] text-black drop-shadow-sm md:text-7xl md:leading-[5rem]"
+        className="font-display text-center text-4xl font-medium tracking-[-0.02em] text-black drop-shadow md:text-7xl md:leading-[5rem]"
       />
       <div className="p-4 h-64 max-w-3xl flex justify-center items-center mx-auto">
         <p className="text-2xl drop-shadow">

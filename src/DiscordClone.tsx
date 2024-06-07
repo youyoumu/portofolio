@@ -9,9 +9,9 @@ export default function DiscordClone() {
         className="h-72"
       />
       <div>
-        <h3 className="text-3xl font-bold mb-4">Discord Clone</h3>
+        <h3 className="text-3xl font-bold mb-4 drop-shadow">Discord Clone</h3>
         <div className="flex gap-2 flex-col">
-          <p className="text-lg">
+          <p className="text-lg drop-shadow">
             Fullstack chat messaging SPA created with Next.js with Ruby on Rails
             json API.
           </p>

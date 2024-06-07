@@ -4,9 +4,9 @@ export default function TwitterClone() {
   return (
     <div className="flex gap-8 px-8 justify-end">
       <div className="flex flex-col items-end">
-        <h3 className="text-3xl font-bold mb-4">Twitter Clone</h3>
+        <h3 className="text-3xl font-bold mb-4 drop-shadow">Twitter Clone</h3>
         <div className="flex gap-2 flex-col">
-          <p className="text-lg">
+          <p className="text-lg drop-shadow">
             Fullstack monolith social media website created with Ruby on Rails.
           </p>
           <div className="flex gap-1 justify-end">
