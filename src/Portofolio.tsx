@@ -7,7 +7,7 @@ export default function Portofolio() {
   return (
     <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide">
       <div className="h-screen w-full flex justify-center items-center p-4 drop-shadow">
-        <p className="max-w-4xl leading-snug text-6xl">
+        <p className="max-w-5xl leading-snug text-6xl px-8">
           Hey, I'm <span className="underline font-medium">youyoumu</span>, a
           self taught fullstack web developer from{' '}
           <span className="underline">Indonesia</span>.
@@ -28,7 +28,9 @@ export default function Portofolio() {
           <span className="font-medium">Tailwind CSS</span>.
         </p>
       </div>
-      <h2 className="text-5xl text-center font-semibold mb-20">Projects</h2>
+      <h2 className="text-5xl text-left max-w-5xl font-semibold mb-20 mx-auto px-8">
+        Projects
+      </h2>
       <div className="max-w-5xl mx-auto flex-col flex gap-16">
         <DiscordClone />
         <TwitterClone />
