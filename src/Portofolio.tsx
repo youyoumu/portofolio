@@ -3,6 +3,12 @@ import DiscordClone from './DiscordClone'
 import TwitterClone from './TwitterClone'
 import ChessRuby from './ChessRuby'
 import { openInNewTab } from './lib/utils'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger
+} from './components/ui/tooltip'
 
 export default function Portofolio() {
   return (
@@ -40,7 +46,7 @@ export default function Portofolio() {
       <h2 className="text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-8">
         Connect
       </h2>
-      <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700">
+      <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 items-start">
         <a
           className="cursor-pointer"
           onClick={(e) => {
@@ -57,14 +63,23 @@ export default function Portofolio() {
         >
           Discord
         </div>
-        <div
-          className="cursor-pointer"
-          onClick={() =>
-            navigator.clipboard.writeText('youyoumu2024.proton.me')
-          }
-        >
-          Email
-        </div>
+        <TooltipProvider delayDuration={200}>
+          <Tooltip>
+            <TooltipTrigger>
+              <div
+                className="cursor-pointer"
+                onClick={() =>
+                  navigator.clipboard.writeText('youyoumu2024.proton.me')
+                }
+              >
+                Email
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>click to copy</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
       <div className="h-48"></div>
     </div>
