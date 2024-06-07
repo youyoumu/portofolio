@@ -1,6 +1,7 @@
 import { VelocityScroll } from './components/scroll-based-velocity'
 import DiscordClone from './DiscordClone'
 import TwitterClone from './TwitterClone'
+import ChessRuby from './ChessRuby'
 
 export default function Portofolio() {
   return (
@@ -31,6 +32,7 @@ export default function Portofolio() {
       <div className="max-w-6xl mx-auto flex-col flex gap-12">
         <DiscordClone />
         <TwitterClone />
+        <ChessRuby />
       </div>
     </div>
   )
