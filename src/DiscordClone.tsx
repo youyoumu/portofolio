@@ -2,7 +2,7 @@ import { openInNewTab } from './lib/utils'
 
 export default function DiscordClone() {
   return (
-    <div className="flex gap-8 me-auto px-8">
+    <div className="flex gap-8 px-8">
       <img
         src="https://raw.githubusercontent.com/youyoumu/discord-clone/main/preview_1.png"
         alt=""

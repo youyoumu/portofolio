@@ -1,5 +1,6 @@
 import { VelocityScroll } from './components/scroll-based-velocity'
 import DiscordClone from './DiscordClone'
+import TwitterClone from './TwitterClone'
 
 export default function Portofolio() {
   return (
@@ -27,8 +28,9 @@ export default function Portofolio() {
         </p>
       </div>
       <h2 className="text-4xl text-center font-semibold mb-16">Projects</h2>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto flex-col flex gap-12">
         <DiscordClone />
+        <TwitterClone />
       </div>
     </div>
   )
