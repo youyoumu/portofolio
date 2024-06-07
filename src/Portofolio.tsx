@@ -25,6 +25,7 @@ export default function Portofolio() {
           <span className="font-medium">Tailwind CSS</span>.
         </p>
       </div>
+      <h2 className="text-4xl text-center font-semibold">Projects</h2>
     </div>
   )
 }
