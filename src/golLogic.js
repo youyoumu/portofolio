@@ -33,8 +33,8 @@ export function createCells(windowSize) {
 }
 
 export function createNextGeneration(cells, mousePosition) {
-  let mouseX = mousePosition.x
-  let mouseY = mousePosition.y
+  let mouseX = mousePosition.x + 50
+  let mouseY = mousePosition.y + 50
 
   const cellsLength = cells.length
   for (let i = 0; i < cellsLength; i++) {
