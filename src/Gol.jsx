@@ -24,7 +24,7 @@ export default function Gol() {
     <Stage
       width={windowSize.width}
       height={windowSize.height}
-      options={{ background: 0xffffff, antialias: true }}
+      options={{ background: 0xfafafa, antialias: true }}
     >
       <Cells windowSize={windowSize} />
     </Stage>

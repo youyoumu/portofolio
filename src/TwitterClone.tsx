@@ -32,7 +32,7 @@ export default function TwitterClone() {
       <img
         src="https://raw.githubusercontent.com/youyoumu/twitter-clone/main/preview/preview_1.png"
         alt=""
-        className="h-72"
+        className="h-72 drop-shadow-xl"
       />
     </div>
   )

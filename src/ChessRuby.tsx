@@ -6,7 +6,7 @@ export default function ChessRuby() {
       <img
         src="https://raw.githubusercontent.com/youyoumu/chess-ruby/main/assets/chess-ruby-preview2.gif"
         alt=""
-        className="w-72"
+        className="w-80 drop-shadow-xl"
       />
       <div>
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Chess Ruby</h3>

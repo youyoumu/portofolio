@@ -6,7 +6,7 @@ export default function DiscordClone() {
       <img
         src="https://raw.githubusercontent.com/youyoumu/discord-clone/main/preview_1.png"
         alt=""
-        className="h-72"
+        className="h-72 drop-shadow-xl"
       />
       <div>
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Discord Clone</h3>

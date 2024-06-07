@@ -71,7 +71,7 @@ export default function Cells({ windowSize }) {
   let stopwatch = 0
   useTick((delta) => {
     stopwatch += delta
-    if (stopwatch > 60) {
+    if (stopwatch > 5) {
       stopwatch = 0
       setCells(createNextGeneration(cells, mousePosition.current))
       setTick(tick + 1)
