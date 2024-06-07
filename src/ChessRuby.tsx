@@ -18,7 +18,7 @@ export default function ChessRuby() {
             <img
               src="/src/assets/github-mark-white.svg"
               alt=""
-              className="invert w-8 p-0.5"
+              className="invert w-8 p-0.5 cursor-pointer"
               onClick={() =>
                 openInNewTab('https://github.com/youyoumu/chess-ruby')
               }

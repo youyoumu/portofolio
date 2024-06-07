@@ -6,14 +6,14 @@ export default function TwitterClone() {
       <div className="flex flex-col items-end">
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Twitter Clone</h3>
         <div className="flex gap-2 flex-col">
-          <p className="text-lg drop-shadow">
+          <p className="text-lg drop-shadow text-end">
             Fullstack monolith social media website created with Ruby on Rails.
           </p>
           <div className="flex gap-1 justify-end">
             <img
               src="/src/assets/open-in-new.svg"
               alt=""
-              className="invert w-8"
+              className="invert w-8 cursor-pointer"
               onClick={() =>
                 openInNewTab('https://twitter-clone.youyoumu.my.id')
               }
@@ -21,7 +21,7 @@ export default function TwitterClone() {
             <img
               src="/src/assets/github-mark-white.svg"
               alt=""
-              className="invert w-8 p-0.5"
+              className="invert w-8 p-0.5 cursor-pointer"
               onClick={() =>
                 openInNewTab('https://github.com/youyoumu/twitter-clone')
               }
