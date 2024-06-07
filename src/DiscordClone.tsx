@@ -16,22 +16,32 @@ export default function DiscordClone() {
             json API.
           </p>
           <div className="flex gap-1">
-            <img
-              src="/src/assets/github-mark-white.svg"
-              alt=""
-              className="invert w-8 p-0.5 cursor-pointer"
-              onClick={() =>
+            <a
+              href="https://github.com/youyoumu/discord-clone"
+              onClick={(e) => {
+                e.preventDefault()
                 openInNewTab('https://github.com/youyoumu/discord-clone')
-              }
-            />
-            <img
-              src="/src/assets/open-in-new.svg"
-              alt=""
-              className="invert w-8 cursor-pointer"
-              onClick={() =>
+              }}
+            >
+              <img
+                src="/src/assets/github-mark-white.svg"
+                alt=""
+                className="invert w-8 p-0.5 cursor-pointer"
+              />
+            </a>
+            <a
+              href="https://discord-clone.youyoumu.my.id"
+              onClick={(e) => {
+                e.preventDefault()
                 openInNewTab('https://discord-clone.youyoumu.my.id')
-              }
-            />
+              }}
+            >
+              <img
+                src="/src/assets/open-in-new.svg"
+                alt=""
+                className="invert w-8 cursor-pointer"
+              />
+            </a>
           </div>
         </div>
       </div>

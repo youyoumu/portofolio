@@ -10,22 +10,32 @@ export default function TwitterClone() {
             Fullstack monolith social media website created with Ruby on Rails.
           </p>
           <div className="flex gap-1 justify-end">
-            <img
-              src="/src/assets/open-in-new.svg"
-              alt=""
-              className="invert w-8 cursor-pointer"
-              onClick={() =>
+            <a
+              href="https://twitter-clone.youyoumu.my.id"
+              onClick={(e) => {
+                e.preventDefault()
                 openInNewTab('https://twitter-clone.youyoumu.my.id')
-              }
-            />
-            <img
-              src="/src/assets/github-mark-white.svg"
-              alt=""
-              className="invert w-8 p-0.5 cursor-pointer"
-              onClick={() =>
+              }}
+            >
+              <img
+                src="/src/assets/open-in-new.svg"
+                alt=""
+                className="invert w-8 cursor-pointer"
+              />
+            </a>
+            <a
+              href="https://github.com/youyoumu/twitter-clone"
+              onClick={(e) => {
+                e.preventDefault()
                 openInNewTab('https://github.com/youyoumu/twitter-clone')
-              }
-            />
+              }}
+            >
+              <img
+                src="/src/assets/github-mark-white.svg"
+                alt=""
+                className="invert w-8 p-0.5 cursor-pointer"
+              />
+            </a>
           </div>
         </div>
       </div>

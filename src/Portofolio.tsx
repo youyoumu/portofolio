@@ -41,12 +41,16 @@ export default function Portofolio() {
         Connect
       </h2>
       <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700">
-        <div
+        <a
           className="cursor-pointer"
-          onClick={() => openInNewTab('https://github.com/youyoumu')}
+          onClick={(e) => {
+            e.preventDefault()
+            openInNewTab('https://github.com/youyoumu')
+          }}
+          href="https://github.com/youyoumu"
         >
           GitHub
-        </div>
+        </a>
         <div
           className="cursor-pointer"
           onClick={() => navigator.clipboard.writeText('youyoumu2024')}

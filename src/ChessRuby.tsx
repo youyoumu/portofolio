@@ -15,14 +15,19 @@ export default function ChessRuby() {
             CLI implementation of classic Chess game using Ruby.
           </p>
           <div className="flex gap-1">
-            <img
-              src="/src/assets/github-mark-white.svg"
-              alt=""
-              className="invert w-8 p-0.5 cursor-pointer"
-              onClick={() =>
+            <a
+              href="https://github.com/youyoumu/chess-ruby"
+              onClick={(e) => {
+                e.preventDefault()
                 openInNewTab('https://github.com/youyoumu/chess-ruby')
-              }
-            />
+              }}
+            >
+              <img
+                src="/src/assets/github-mark-white.svg"
+                alt=""
+                className="invert w-8 p-0.5 cursor-pointer"
+              />
+            </a>
           </div>
         </div>
       </div>
