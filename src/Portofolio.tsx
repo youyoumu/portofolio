@@ -28,7 +28,7 @@ export default function Portofolio() {
           <span className="font-medium">Tailwind CSS</span>.
         </p>
       </div>
-      <h2 className="text-5xl text-left max-w-5xl font-semibold mb-20 mx-auto px-8">
+      <h2 className="text-5xl text-left max-w-4xl font-semibold mb-20 mx-auto px-8">
         Projects
       </h2>
       <div className="max-w-5xl mx-auto flex-col flex gap-16">
@@ -36,6 +36,15 @@ export default function Portofolio() {
         <TwitterClone />
         <ChessRuby />
       </div>
+      <h2 className="text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-8">
+        Connect
+      </h2>
+      <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700">
+        <div>GitHub</div>
+        <div>Discord</div>
+        <div>Email</div>
+      </div>
+      <div className="h-48"></div>
     </div>
   )
 }
