@@ -11,8 +11,8 @@ export default function Gol() {
   useEffect(() => {
     function handleResize() {
       setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
+        width: window.innerWidth + 100,
+        height: window.innerHeight + 100
       })
     }
     window.addEventListener('resize', handleResize)
