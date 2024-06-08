@@ -25,7 +25,7 @@ export default function Cells({ windowSize }) {
   }, [])
 
   function cellColor(cell, theme) {
-    if (theme === 'light') {
+    if (theme !== 'dark') {
       if (cell.isAlive) {
         if (cell.lifetime === 0) {
           return 0xf7f7f7
@@ -68,7 +68,7 @@ export default function Cells({ windowSize }) {
 
     g.clear()
     const theme = localStorage.getItem('vite-ui-theme')
-    if (theme === 'light') {
+    if (theme !== 'dark') {
       g.beginFill(0xfafafa)
     } else {
       g.beginFill(0x001426)
