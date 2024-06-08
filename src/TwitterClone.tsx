@@ -17,7 +17,7 @@ export default function TwitterClone() {
             <Badge>Ruby on Rails</Badge> <Badge>Bootstrap</Badge>
             <Badge>Hotwire</Badge>
           </div>
-          <p className="text-lg drop-shadow text-end text-slate-700">
+          <p className="text-lg drop-shadow text-end text-slate-700 dark:text-zinc-300">
             Fullstack monolith social media website created with Ruby on Rails.
           </p>
           <div className="flex gap-1 justify-end">
@@ -31,7 +31,7 @@ export default function TwitterClone() {
               <img
                 src="/open-in-new.svg"
                 alt=""
-                className="invert w-8 cursor-pointer"
+                className="invert dark:invert-0 w-8 cursor-pointer"
               />
             </a>
             <a
@@ -44,7 +44,7 @@ export default function TwitterClone() {
               <img
                 src="/github-mark-white.svg"
                 alt=""
-                className="invert w-8 p-0.5 cursor-pointer"
+                className="invert dark:invert-0 w-8 p-0.5 cursor-pointer"
               />
             </a>
           </div>

@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 
 export default function Portofolio() {
   return (
-    <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide">
+    <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide dark:text-zinc-200">
       <div className="h-screen w-full flex justify-center items-center p-4 drop-shadow">
         <motion.p
           className="max-w-5xl leading-snug text-6xl px-8"
@@ -30,7 +30,7 @@ export default function Portofolio() {
         text="HTML CSS JavaScript TypeScript Ruby SQL Linux Bash Git SSH"
         text2="Next.js Ruby on Rails React Tailwind CSS PixiJS shadcn/ui Bootstrap daisyUI"
         default_velocity={3}
-        className="font-display text-center text-4xl font-medium tracking-[-0.02em] text-black drop-shadow md:text-7xl md:leading-[5rem]"
+        className="font-display text-center text-4xl font-medium tracking-[-0.02em] drop-shadow md:text-7xl md:leading-[5rem]"
       />
       <motion.div
         className="p-4 h-64 max-w-3xl flex justify-center items-center mx-auto"
@@ -68,13 +68,17 @@ export default function Portofolio() {
         Connect
       </motion.h2>
       <motion.div
-        className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 items-start"
+        className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 dark:text-zinc-200 items-start"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
       >
         <div className="flex gap-2">
-          <img src="/github-mark-white.svg" alt="" className="invert w-6 h-6" />
+          <img
+            src="/github-mark-white.svg"
+            alt=""
+            className="invert dark:invert-0 w-6 h-6"
+          />
           <a
             className="cursor-pointer"
             onClick={(e) => {
@@ -90,7 +94,11 @@ export default function Portofolio() {
           <Tooltip>
             <TooltipTrigger>
               <div className="flex gap-2">
-                <img src="/discord.svg" alt="" className="invert w-6 h-6" />
+                <img
+                  src="/discord.svg"
+                  alt=""
+                  className="invert dark:invert-0 w-6 h-6"
+                />
                 <div
                   className="cursor-pointer flex gap-2 items-center"
                   onClick={() => navigator.clipboard.writeText('youyoumu2017')}
@@ -108,7 +116,7 @@ export default function Portofolio() {
           <Tooltip>
             <TooltipTrigger>
               <div className="flex gap-2">
-                <img src="/email.svg" alt="" className="invert" />
+                <img src="/email.svg" alt="" className="invert dark:invert-0" />
                 <div
                   className="cursor-pointer"
                   onClick={() =>

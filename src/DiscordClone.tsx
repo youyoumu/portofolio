@@ -24,7 +24,7 @@ export default function DiscordClone() {
             <Badge>Tailwind CSS</Badge>
           </div>
 
-          <p className="text-lg drop-shadow text-slate-700">
+          <p className="text-lg drop-shadow text-slate-700 dark:text-zinc-300">
             Fullstack chat messaging SPA created with Next.js with Ruby on Rails
             json API.
           </p>
@@ -39,7 +39,7 @@ export default function DiscordClone() {
               <img
                 src="/github-mark-white.svg"
                 alt=""
-                className="invert w-8 p-0.5 cursor-pointer"
+                className="invert dark:invert-0 w-8 p-0.5 cursor-pointer"
               />
             </a>
             <a
@@ -52,7 +52,7 @@ export default function DiscordClone() {
               <img
                 src="/open-in-new.svg"
                 alt=""
-                className="invert w-8 cursor-pointer"
+                className="invert dark:invert-0 w-8 cursor-pointer"
               />
             </a>
           </div>

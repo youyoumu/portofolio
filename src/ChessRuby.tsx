@@ -21,7 +21,7 @@ export default function ChessRuby() {
           <div>
             <Badge>Ruby</Badge>
           </div>
-          <p className="text-lg drop-shadow text-slate-700">
+          <p className="text-lg drop-shadow text-slate-700 dark:text-zinc-300">
             CLI implementation of classic Chess game using Ruby.
           </p>
           <div className="flex gap-1">
@@ -35,7 +35,7 @@ export default function ChessRuby() {
               <img
                 src="/github-mark-white.svg"
                 alt=""
-                className="invert w-8 p-0.5 cursor-pointer"
+                className="invert dark:invert-0 w-8 p-0.5 cursor-pointer"
               />
             </a>
           </div>
