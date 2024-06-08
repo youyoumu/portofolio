@@ -67,12 +67,13 @@ export default function Portofolio() {
           <Tooltip>
             <TooltipTrigger>
               <div
-                className="cursor-pointer"
+                className="cursor-pointer flex gap-2 items-center"
                 onClick={() =>
                   navigator.clipboard.writeText('youyoumu2024@proton.me')
                 }
               >
-                Email
+                <img src="/src/assets/email.svg" alt="" className="invert" />
+                <div>youyoumu2024@proton.me</div>
               </div>
             </TooltipTrigger>
             <TooltipContent>
