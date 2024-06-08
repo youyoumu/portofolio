@@ -74,11 +74,7 @@ export default function Portofolio() {
         transition={{ duration: 0.4, ease: 'easeOut' }}
       >
         <div className="flex gap-2">
-          <img
-            src="/src/assets/github-mark-white.svg"
-            alt=""
-            className="invert w-6 h-6"
-          />
+          <img src="/github-mark-white.svg" alt="" className="invert w-6 h-6" />
           <a
             className="cursor-pointer"
             onClick={(e) => {
@@ -94,11 +90,7 @@ export default function Portofolio() {
           <Tooltip>
             <TooltipTrigger>
               <div className="flex gap-2">
-                <img
-                  src="/src/assets/discord.svg"
-                  alt=""
-                  className="invert w-6 h-6"
-                />
+                <img src="/discord.svg" alt="" className="invert w-6 h-6" />
                 <div
                   className="cursor-pointer flex gap-2 items-center"
                   onClick={() => navigator.clipboard.writeText('youyoumu2024')}
@@ -116,7 +108,7 @@ export default function Portofolio() {
           <Tooltip>
             <TooltipTrigger>
               <div className="flex gap-2">
-                <img src="/src/assets/email.svg" alt="" className="invert" />
+                <img src="/email.svg" alt="" className="invert" />
                 <div
                   className="cursor-pointer"
                   onClick={() =>

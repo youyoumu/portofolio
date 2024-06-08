@@ -29,7 +29,7 @@ export default function ChessRuby() {
               }}
             >
               <img
-                src="/src/assets/github-mark-white.svg"
+                src="/github-mark-white.svg"
                 alt=""
                 className="invert w-8 p-0.5 cursor-pointer"
               />
