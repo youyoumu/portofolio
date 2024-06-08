@@ -9,16 +9,22 @@ import {
   TooltipProvider,
   TooltipTrigger
 } from './components/ui/tooltip'
+import { motion } from 'framer-motion'
 
 export default function Portofolio() {
   return (
     <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide">
       <div className="h-screen w-full flex justify-center items-center p-4 drop-shadow">
-        <p className="max-w-5xl leading-snug text-6xl px-8">
+        <motion.p
+          className="max-w-5xl leading-snug text-6xl px-8"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+        >
           Hey, I'm <span className="underline font-medium">youyoumu</span>, a
           self taught fullstack web developer from{' '}
           <span className="underline">Indonesia</span>.
-        </p>
+        </motion.p>
       </div>
       <VelocityScroll
         text="HTML CSS JavaScript TypeScript Ruby SQL Linux Bash Git SSH"
