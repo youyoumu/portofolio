@@ -43,10 +43,20 @@ export default function Cells({ windowSize }) {
     }
   }
 
-  const cellGraphics = useCallback((g, cells) => {
+  const cellGraphics = useCallback((g, cells, windowSize) => {
     const cellsLength = cells.length
     if (cellsLength === 0) return
+
     g.clear()
+    const theme = localStorage.getItem('vite-ui-theme')
+    if (theme === 'light') {
+      g.beginFill(0xfafafa)
+    } else {
+      g.beginFill(0x001426)
+    }
+
+    g.drawRect(0, 0, windowSize.width + 100, windowSize.height + 100)
+    g.endFill()
 
     for (let i = 0; i < cellsLength; i++) {
       const rowLength = cells[i].length
@@ -78,5 +88,5 @@ export default function Cells({ windowSize }) {
     }
   })
 
-  return <Graphics draw={(g) => cellGraphics(g, cells)} />
+  return <Graphics draw={(g) => cellGraphics(g, cells, windowSize)} />
 }
