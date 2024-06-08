@@ -93,9 +93,9 @@ export default function Portofolio() {
                 <img src="/discord.svg" alt="" className="invert w-6 h-6" />
                 <div
                   className="cursor-pointer flex gap-2 items-center"
-                  onClick={() => navigator.clipboard.writeText('youyoumu2024')}
+                  onClick={() => navigator.clipboard.writeText('youyoumu2017')}
                 >
-                  youyoumu2024
+                  youyoumu2017
                 </div>
               </div>
             </TooltipTrigger>
