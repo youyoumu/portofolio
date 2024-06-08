@@ -24,22 +24,41 @@ export default function Cells({ windowSize }) {
     }
   }, [])
 
-  function cellColor(cell) {
-    if (cell.isAlive) {
-      if (cell.lifetime === 0) {
-        return 0xf7f7f7
-      } else if (cell.lifetime === 1) {
-        return 0xe8e8e8
+  function cellColor(cell, theme) {
+    if (theme === 'light') {
+      if (cell.isAlive) {
+        if (cell.lifetime === 0) {
+          return 0xf7f7f7
+        } else if (cell.lifetime === 1) {
+          return 0xe8e8e8
+        } else {
+          return 0xe3e3e3
+        }
       } else {
-        return 0xe3e3e3
+        if (cell.deadtime === 1) {
+          return 0xe8e8e8
+        } else if (cell.deadtime === 2) {
+          return 0xf7f7f7
+        }
+        return 0xffffff
       }
     } else {
-      if (cell.deadtime === 1) {
-        return 0xe8e8e8
-      } else if (cell.deadtime === 2) {
-        return 0xf7f7f7
+      if (cell.isAlive) {
+        if (cell.lifetime === 0) {
+          return 0x00172b
+        } else if (cell.lifetime === 1) {
+          return 0x00213d
+        } else {
+          return 0x00325c
+        }
+      } else {
+        if (cell.deadtime === 1) {
+          return 0x00213d
+        } else if (cell.deadtime === 2) {
+          return 0x00172b
+        }
+        return 0x001426
       }
-      return 0xffffff
     }
   }
 
@@ -65,7 +84,7 @@ export default function Cells({ windowSize }) {
         if (cell.deadtime > 2 && !cell.isAlive) {
           continue
         }
-        g.beginFill(cellColor(cell))
+        g.beginFill(cellColor(cell, theme))
         g.drawRoundedRect(
           cell.x,
           cell.y,
