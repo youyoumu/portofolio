@@ -14,7 +14,7 @@ export default function Cursor() {
 
   return (
     <div
-      className="w-6 h-6 bg-[#aaaaaa] rounded-full fixed z-[-1] pointer-events-none"
+      className="w-6 h-6 bg-[#004c8c] rounded-full fixed z-[-1] pointer-events-none"
       style={{ left: mousePosition.x - 12, top: mousePosition.y - 12 }}
     ></div>
   )
