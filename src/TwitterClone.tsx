@@ -1,5 +1,6 @@
 import { openInNewTab } from './lib/utils'
 import { motion } from 'framer-motion'
+import { Badge } from './components/ui/badge'
 
 export default function TwitterClone() {
   return (
@@ -12,6 +13,10 @@ export default function TwitterClone() {
       <div className="flex flex-col items-end">
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Twitter Clone</h3>
         <div className="flex gap-2 flex-col">
+          <div className="flex gap-1 justify-end">
+            <Badge>Ruby on Rails</Badge> <Badge>Bootstrap</Badge>
+            <Badge>Hotwire</Badge>
+          </div>
           <p className="text-lg drop-shadow text-end text-slate-700">
             Fullstack monolith social media website created with Ruby on Rails.
           </p>

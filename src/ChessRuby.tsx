@@ -1,5 +1,6 @@
 import { openInNewTab } from './lib/utils'
 import { motion } from 'framer-motion'
+import { Badge } from './components/ui/badge'
 
 export default function ChessRuby() {
   return (
@@ -17,6 +18,9 @@ export default function ChessRuby() {
       <div>
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Chess Ruby</h3>
         <div className="flex gap-2 flex-col">
+          <div>
+            <Badge>Ruby</Badge>
+          </div>
           <p className="text-lg drop-shadow text-slate-700">
             CLI implementation of classic Chess game using Ruby.
           </p>

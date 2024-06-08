@@ -1,5 +1,6 @@
 import { openInNewTab } from './lib/utils'
 import { motion } from 'framer-motion'
+import { Badge } from './components/ui/badge'
 
 export default function DiscordClone() {
   return (
@@ -17,6 +18,12 @@ export default function DiscordClone() {
       <div>
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Discord Clone</h3>
         <div className="flex gap-2 flex-col">
+          <div>
+            <Badge>Next.js</Badge> <Badge>Ruby on Rails</Badge>{' '}
+            <Badge>shadcn/ui</Badge> <Badge>React</Badge>{' '}
+            <Badge>Tailwind CSS</Badge>
+          </div>
+
           <p className="text-lg drop-shadow text-slate-700">
             Fullstack chat messaging SPA created with Next.js with Ruby on Rails
             json API.
