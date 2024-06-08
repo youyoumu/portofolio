@@ -1,8 +1,14 @@
 import { openInNewTab } from './lib/utils'
+import { motion } from 'framer-motion'
 
 export default function TwitterClone() {
   return (
-    <div className="flex gap-8 px-8 justify-end">
+    <motion.div
+      className="flex gap-8 px-8 justify-end"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+    >
       <div className="flex flex-col items-end">
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Twitter Clone</h3>
         <div className="flex gap-2 flex-col">
@@ -44,6 +50,6 @@ export default function TwitterClone() {
         alt=""
         className="h-72 drop-shadow-xl"
       />
-    </div>
+    </motion.div>
   )
 }

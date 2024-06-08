@@ -32,7 +32,12 @@ export default function Portofolio() {
         default_velocity={3}
         className="font-display text-center text-4xl font-medium tracking-[-0.02em] text-black drop-shadow md:text-7xl md:leading-[5rem]"
       />
-      <div className="p-4 h-64 max-w-3xl flex justify-center items-center mx-auto">
+      <motion.div
+        className="p-4 h-64 max-w-3xl flex justify-center items-center mx-auto"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+      >
         <p className="text-2xl drop-shadow">
           <span className="font-medium">Ruby on Rails</span> and{' '}
           <span className="font-medium">Next.js</span> are my go-to frameworks
@@ -40,19 +45,34 @@ export default function Portofolio() {
           <span className="font-medium">React</span> and{' '}
           <span className="font-medium">Tailwind CSS</span>.
         </p>
-      </div>
-      <h2 className="text-5xl text-left max-w-4xl font-semibold mb-20 mx-auto px-8">
+      </motion.div>
+      <motion.h2
+        className="text-5xl text-left max-w-4xl font-semibold mb-20 mx-auto px-8"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+      >
         Projects
-      </h2>
+      </motion.h2>
       <div className="max-w-5xl mx-auto flex-col flex gap-16">
         <DiscordClone />
         <TwitterClone />
         <ChessRuby />
       </div>
-      <h2 className="text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-8">
+      <motion.h2
+        className="text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-8"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+      >
         Connect
-      </h2>
-      <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 items-start">
+      </motion.h2>
+      <motion.div
+        className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 items-start"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+      >
         <div className="flex gap-2">
           <img
             src="/src/assets/github-mark-white.svg"
@@ -112,7 +132,7 @@ export default function Portofolio() {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-      </div>
+      </motion.div>
       <div className="h-48"></div>
     </div>
   )

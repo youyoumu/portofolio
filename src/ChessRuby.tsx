@@ -1,8 +1,14 @@
 import { openInNewTab } from './lib/utils'
+import { motion } from 'framer-motion'
 
 export default function ChessRuby() {
   return (
-    <div className="flex gap-8 px-8">
+    <motion.div
+      className="flex gap-8 px-8"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+    >
       <img
         src="https://raw.githubusercontent.com/youyoumu/chess-ruby/main/assets/chess-ruby-preview2.gif"
         alt=""
@@ -31,6 +37,6 @@ export default function ChessRuby() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
