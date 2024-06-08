@@ -5,7 +5,7 @@ import { Badge } from './components/ui/badge'
 export default function TwitterClone() {
   return (
     <motion.div
-      className="flex gap-8 px-8 justify-end"
+      className="flex gap-8 px-4 sm:px-8 justify-end flex-col-reverse md:flex-row"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -13,7 +13,7 @@ export default function TwitterClone() {
       <div className="flex flex-col items-end">
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Twitter Clone</h3>
         <div className="flex gap-2 flex-col">
-          <div className="flex gap-1 justify-end">
+          <div className="flex gap-1 justify-end flex-wrap">
             <Badge>Ruby on Rails</Badge> <Badge>Bootstrap</Badge>
             <Badge>Hotwire</Badge>
           </div>
@@ -53,7 +53,7 @@ export default function TwitterClone() {
       <img
         src="https://raw.githubusercontent.com/youyoumu/twitter-clone/main/preview/preview_1.png"
         alt=""
-        className="h-72 drop-shadow-xl"
+        className="md:h-72 drop-shadow-xl object-contain"
       />
     </motion.div>
   )

@@ -5,7 +5,7 @@ import { Badge } from './components/ui/badge'
 export default function DiscordClone() {
   return (
     <motion.div
-      className="flex gap-8 px-8"
+      className="flex gap-8 px-4 sm:px-8 flex-col md:flex-row"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -13,7 +13,7 @@ export default function DiscordClone() {
       <img
         src="https://raw.githubusercontent.com/youyoumu/discord-clone/main/preview_1.png"
         alt=""
-        className="h-72 drop-shadow-xl"
+        className="md:h-72 drop-shadow-xl object-contain"
       />
       <div>
         <h3 className="text-3xl font-bold mb-4 drop-shadow">Discord Clone</h3>

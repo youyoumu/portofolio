@@ -16,7 +16,7 @@ export default function Portofolio() {
     <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide dark:text-zinc-200">
       <div className="h-screen w-full flex justify-center items-center p-4 drop-shadow">
         <motion.p
-          className="max-w-5xl leading-snug text-6xl px-8"
+          className="max-w-5xl leading-snug text-3xl sm:text-6xl px-4 sm:px-8"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -30,7 +30,7 @@ export default function Portofolio() {
         text="HTML CSS JavaScript TypeScript Ruby SQL Linux Bash Git SSH"
         text2="Next.js Ruby on Rails React Tailwind CSS PixiJS shadcn/ui Bootstrap daisyUI"
         default_velocity={3}
-        className="font-display text-center text-4xl font-medium tracking-[-0.02em] drop-shadow md:text-7xl md:leading-[5rem]"
+        className="font-display text-center text-3xl sm:text-5xl font-medium tracking-[-0.02em] drop-shadow md:text-7xl md:leading-[5rem]"
       />
       <motion.div
         className="p-4 h-64 max-w-3xl flex justify-center items-center mx-auto"
@@ -38,7 +38,7 @@ export default function Portofolio() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
       >
-        <p className="text-2xl drop-shadow">
+        <p className=" sm:text-2xl drop-shadow">
           <span className="font-medium">Ruby on Rails</span> and{' '}
           <span className="font-medium">Next.js</span> are my go-to frameworks
           for building full-stack web applications, along with{' '}
@@ -47,7 +47,7 @@ export default function Portofolio() {
         </p>
       </motion.div>
       <motion.h2
-        className="text-5xl text-left max-w-4xl font-semibold mb-20 mx-auto px-8"
+        className="text-3xl sm:text-5xl text-left max-w-4xl font-semibold mb-10 sm:mb-20 mx-auto px-4 sm:px-8"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -60,7 +60,7 @@ export default function Portofolio() {
         <ChessRuby />
       </div>
       <motion.h2
-        className="text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-8"
+        className="text-3xl sm:text-5xl text-left max-w-4xl font-semibold mt-20 mb-8 mx-auto px-4 sm:px-8"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -68,7 +68,7 @@ export default function Portofolio() {
         Connect
       </motion.h2>
       <motion.div
-        className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 dark:text-zinc-200 items-start"
+        className="max-w-4xl mx-auto flex-col flex gap-2 px-4 sm:px-8 text-xl underline text-slate-700 dark:text-zinc-200 items-start"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: 'easeOut' }}

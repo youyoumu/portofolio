@@ -5,7 +5,7 @@ import { Badge } from './components/ui/badge'
 export default function ChessRuby() {
   return (
     <motion.div
-      className="flex gap-8 px-8"
+      className="flex gap-8 px-4 sm:px-8 flex-col sm:flex-row"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
