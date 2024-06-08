@@ -47,16 +47,23 @@ export default function Portofolio() {
         Connect
       </h2>
       <div className="max-w-4xl mx-auto flex-col flex gap-2 px-8 text-xl underline text-slate-700 items-start">
-        <a
-          className="cursor-pointer"
-          onClick={(e) => {
-            e.preventDefault()
-            openInNewTab('https://github.com/youyoumu')
-          }}
-          href="https://github.com/youyoumu"
-        >
-          GitHub
-        </a>
+        <div className="flex gap-2">
+          <img
+            src="/src/assets/github-mark-white.svg"
+            alt=""
+            className="invert w-6 h-6"
+          />
+          <a
+            className="cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault()
+              openInNewTab('https://github.com/youyoumu')
+            }}
+            href="https://github.com/youyoumu"
+          >
+            GitHub
+          </a>
+        </div>
         <TooltipProvider delayDuration={200}>
           <Tooltip>
             <TooltipTrigger>
@@ -64,7 +71,7 @@ export default function Portofolio() {
                 <img
                   src="/src/assets/discord.svg"
                   alt=""
-                  className="invert w-6"
+                  className="invert w-6 h-6"
                 />
                 <div
                   className="cursor-pointer flex gap-2 items-center"
