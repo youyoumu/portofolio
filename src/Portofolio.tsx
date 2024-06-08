@@ -57,23 +57,41 @@ export default function Portofolio() {
         >
           GitHub
         </a>
-        <div
-          className="cursor-pointer"
-          onClick={() => navigator.clipboard.writeText('youyoumu2024')}
-        >
-          Discord
-        </div>
         <TooltipProvider delayDuration={200}>
           <Tooltip>
             <TooltipTrigger>
-              <div
-                className="cursor-pointer flex gap-2 items-center"
-                onClick={() =>
-                  navigator.clipboard.writeText('youyoumu2024@proton.me')
-                }
-              >
+              <div className="flex gap-2">
+                <img
+                  src="/src/assets/discord.svg"
+                  alt=""
+                  className="invert w-6"
+                />
+                <div
+                  className="cursor-pointer flex gap-2 items-center"
+                  onClick={() => navigator.clipboard.writeText('youyoumu2024')}
+                >
+                  youyoumu2024
+                </div>
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>click to copy</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <TooltipProvider delayDuration={200}>
+          <Tooltip>
+            <TooltipTrigger>
+              <div className="flex gap-2">
                 <img src="/src/assets/email.svg" alt="" className="invert" />
-                <div>youyoumu2024@proton.me</div>
+                <div
+                  className="cursor-pointer"
+                  onClick={() =>
+                    navigator.clipboard.writeText('youyoumu2024@proton.me')
+                  }
+                >
+                  youyoumu2024@proton.me
+                </div>
               </div>
             </TooltipTrigger>
             <TooltipContent>
