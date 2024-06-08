@@ -43,10 +43,10 @@ export default function DiscordClone() {
               />
             </a>
             <a
-              href="https://discord-clone.youyoumu.my.id"
+              href="https://corddis.youyoumu.my.id"
               onClick={(e) => {
                 e.preventDefault()
-                openInNewTab('https://discord-clone.youyoumu.my.id')
+                openInNewTab('https://corddis.youyoumu.my.id')
               }}
             >
               <img
