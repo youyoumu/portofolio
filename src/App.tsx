@@ -15,7 +15,7 @@ export default function App() {
     <div>
       <Portofolio />
       <div className="fixed left-[-50px] top-[-50px] z-[-1]" ref={scene}>
-        <div data-depth="0.1">
+        <div data-depth="0.2">
           <Gol />
         </div>
       </div>
