@@ -26,7 +26,7 @@ export default function DiscordClone() {
 
           <p className="text-lg drop-shadow text-slate-700 dark:text-zinc-300">
             Fullstack chat messaging SPA created with Next.js with Ruby on Rails
-            json API.
+            JSON API.
           </p>
           <div className="flex gap-1">
             <a
