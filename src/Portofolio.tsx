@@ -29,7 +29,7 @@ export default function Portofolio() {
       <VelocityScroll
         text="HTML CSS JavaScript TypeScript Ruby SQL Linux Bash Git SSH"
         text2="Next.js Ruby on Rails React Tailwind CSS PixiJS shadcn/ui Bootstrap daisyUI"
-        default_velocity={3}
+        default_velocity={1.5}
         className="font-display text-center text-3xl sm:text-5xl font-medium tracking-[-0.02em] drop-shadow md:text-7xl md:leading-[5rem]"
       />
       <motion.div
