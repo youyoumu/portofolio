@@ -39,7 +39,7 @@ export default function DiscordClone() {
               <img
                 src="/github-mark-white.svg"
                 alt=""
-                className="invert dark:invert-0 w-8 p-0.5 cursor-pointer"
+                className="invert dark:invert-0 w-8 p-0.5 cursor-pointer hover:scale-110 transition-transform"
               />
             </a>
             <a
@@ -52,7 +52,7 @@ export default function DiscordClone() {
               <img
                 src="/open-in-new.svg"
                 alt=""
-                className="invert dark:invert-0 w-8 cursor-pointer"
+                className="invert dark:invert-0 w-8 cursor-pointer hover:scale-110 transition-transform"
               />
             </a>
           </div>
