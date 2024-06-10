@@ -38,6 +38,19 @@ export default function ChessRuby() {
                 className="invert dark:invert-0 w-8 p-0.5 cursor-pointer hover:scale-110 transition-transform"
               />
             </a>
+            <a
+              href="https://replit.com/@youyoumu/chess-ruby"
+              onClick={(e) => {
+                e.preventDefault()
+                openInNewTab('https://replit.com/@youyoumu/chess-ruby')
+              }}
+            >
+              <img
+                src="/open-in-new.svg"
+                alt=""
+                className="invert dark:invert-0 w-8 cursor-pointer hover:scale-110 transition-transform"
+              />
+            </a>
           </div>
         </div>
       </div>
