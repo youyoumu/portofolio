@@ -12,6 +12,9 @@ import {
 import { motion } from 'framer-motion'
 
 export default function Portofolio() {
+  const urlParams = new URLSearchParams(window.location.search)
+  const isRealNameEnabled = urlParams.get('real_name') === 'true'
+
   return (
     <div className="min-w-screen max-w-screen font-outfit max-h-screen overflow-scroll scrollbar-hide dark:text-zinc-200">
       <div className="h-screen w-full flex justify-center items-center p-4 drop-shadow">
@@ -21,8 +24,11 @@ export default function Portofolio() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
         >
-          Hey, I'm <span className="underline font-medium">youyoumu</span>, a
-          self taught fullstack web developer from{' '}
+          Hey, I'm{' '}
+          <span className="underline font-medium">
+            {isRealNameEnabled ? 'Donny Lau Kim Leng' : 'youyoumu'}
+          </span>
+          , a self taught fullstack web developer from{' '}
           <span className="underline">Indonesia</span>.
         </motion.p>
       </div>
@@ -120,10 +126,16 @@ export default function Portofolio() {
                 <div
                   className="cursor-pointer"
                   onClick={() =>
-                    navigator.clipboard.writeText('youyoumu2024@proton.me')
+                    navigator.clipboard.writeText(
+                      isRealNameEnabled
+                        ? 'donnylaukimleng@outlook.com'
+                        : 'youyoumu2024@proton.me'
+                    )
                   }
                 >
-                  youyoumu2024@proton.me
+                  {isRealNameEnabled
+                    ? 'donnylaukimleng@outlook.com'
+                    : 'youyoumu2024@proton.me'}
                 </div>
               </div>
             </TooltipTrigger>
